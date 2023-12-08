@@ -1,0 +1,21 @@
+nameApplication: API Gateway
+hostApplication: http://localhost
+
+config:
+  port: 3333
+  enabledMorgan: true
+
+security:
+  enabledJSON: true
+  enabledHelmet: true
+
+services:
+  - nameRoute: api/v1/user
+    url: http://54.164.27.152:3000
+  - nameRoute: api/v1/artist
+    url: http://44.221.24.21:4000
+  - nameRoute: api/v1/posts
+    url: http://44.193.34.176:5000
+  - nameRoute: api/v1/comments
+    url: http://44.193.34.176:5000
+  
